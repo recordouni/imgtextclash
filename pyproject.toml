@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recordouni-imgtextclash"
+version = "0.1.0"
+description = "把候选项映射到类别上，算出图文冲突的检测的覆盖率并列出未覆盖的类别"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "recordouni" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://recordouni.github.io"
+Repository = "https://github.com/recordouni/imgtextclash"
+Issues = "https://github.com/recordouni/imgtextclash/issues"
+
+[project.scripts]
+imgtextclash = "imgtextclash:main"
+
+[tool.setuptools]
+py-modules = ["imgtextclash"]
